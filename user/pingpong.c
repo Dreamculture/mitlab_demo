@@ -19,7 +19,7 @@ int pingpong(void){
         int pid = getpid();
         write(p1[1],&buffer,1);
         read(p2[0],&buffer, 1);
-        printf("%d: received ping\n",pid);
+        printf("%d: received pong\n",pid);
         exit(0);
         
     }

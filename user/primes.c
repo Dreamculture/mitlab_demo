@@ -11,7 +11,7 @@ void primes(void){
         dup(p[0]);
         close(p[0]); 
         for(int i = 2; i <= 35; i++){
-        read(0, &buf , 1);  
+        read(0, &buf , 4);  
         printf("the number is %d\n",buf); 
     }      
     }
@@ -21,7 +21,7 @@ void primes(void){
         close(p[1]);
         for (int i = 2 ; i <= 35 ; i ++){
             int data = i;
-        write(1, &data , 1);
+        write(1, &data , 4);
 
         }
     }

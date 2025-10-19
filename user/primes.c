@@ -10,8 +10,10 @@ void primes(void){
         close(0);
         dup(p[0]);
         close(p[0]); 
+        for(int i = 2; i <= 35; i++){
         read(0, &buf , 1);  
-        printf("the number is %d\n",buf);        
+        printf("the number is %d\n",buf); 
+    }      
     }
     else{
         close(1);

@@ -12,7 +12,10 @@ void primes(void){
         close(p[0]); 
         for(int i = 2; i <= 35; i++){
         read(0, &buf , 4);  
-        printf("the number is %d\n",buf); 
+        int n = buf % 2;
+        if(n != 0){
+        }
+        exit(0);
     }      
     }
     else{
@@ -22,7 +25,7 @@ void primes(void){
         for (int i = 2 ; i <= 35 ; i ++){
             int data = i;
         write(1, &data , 4);
-
         }
+        exit(0);
     }
 }
